@@ -16,7 +16,16 @@
             <div id="stat-container">Hourly/Dayly/Weekly stats on energy</div>
             
             <div id="in-temp-container">Inside temperature</div>
-            <div id="DTL-container">Date/Time/Location</div>
+            <div id="DTL-container"><p><span id="datetime"></span></p>
+
+                <script>
+                var dt = new Date();
+                function time(){
+                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+                };
+                setInterval(time, 1000);
+                </script>
+                    </div>
             <div id="out-temp-container">Outside temperture</div>
             <div id="Prof-container">Profile</div>
             <div id="stat-container-show">
