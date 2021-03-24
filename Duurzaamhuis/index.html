@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Duurzaamhuis</title>
         <script src="js/apparaten.js" defer></script>
+        <script src="js/tijd.js" defer></script>
     </head>
         <body>
 
@@ -16,7 +17,9 @@
             <div id="stat-container">Hourly/Dayly/Weekly stats on energy</div>
             
             <div id="in-temp-container">Inside temperature</div>
-            <div id="DTL-container">Date/Time/Location</div>
+            <div id="DTL-container"><p><span id="datetime">...</span></p>
+                
+                    </div>
             <div id="out-temp-container">Outside temperture</div>
             <div id="Prof-container">Profile</div>
             <div id="stat-container-show">
@@ -24,7 +27,7 @@
                     <h1>Titel apparaat</h1>
                     <div>
                         <p>minuten per dag: <span>0</span></p>
-                        <input type="range" min="0" max="240" step="10" value="15" />
+                        <input class="slider" type="range" min="0" max="240" step="10" value="15" />
                     </div>
                     <h2>Verbruik of kosten</h2>
                     <button>Toon verbruik</button>
