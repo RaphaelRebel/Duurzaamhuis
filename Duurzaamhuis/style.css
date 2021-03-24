@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital@1&display=swap');
+
 html{
     margin: 0;
     padding: 0;
@@ -56,8 +59,11 @@ html{
     background-color: #3A1291;
     grid-row-start: 1;
     grid-row-end: 1;
-    height: 141px;
+    height: 209px;
+    padding: 0;
 }
+
+
 
 #out-temp-container{
     background-color: #6033C1;
@@ -109,6 +115,23 @@ button{
     padding: 18px;
 }
 
+
+.lineOne{
+    font-size: 30px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.lineTwo{
+    font-size: 72px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.lineThree{
+    font-size: 32px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+
 @media only screen and (min-width: 768px){
    #main-container{ display: grid;
     grid-template-columns: 1fr 1fr;
@@ -156,6 +179,8 @@ button{
 }
 
 }
+
+
 
 
 @media only screen and (min-width: 1024px){
