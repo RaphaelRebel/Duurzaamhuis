@@ -5,12 +5,13 @@ html{
     margin: 0;
     padding: 0;
     font-family: Quatro;
+    background-color: #f1f1f1;
+    
 }
 
 .title{
     display: flex;
     justify-content: center;
-
 }
 
 #main-container{
@@ -20,9 +21,11 @@ html{
     /* grid-template-columns: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
     grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px ; */
     gap: 5px;
-    margin: 0 1fr 0 1fr;
+    
     height: 0;
 }
+
+
 
 #main-container div{
     color: white;
@@ -41,17 +44,18 @@ html{
 
 #stat-container-show{
     background-color: #BBA4EB;
-    grid-row-start: 12;
-    grid-row-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 5;
-    height: 240px;
+    height: 375px;
+    margin: 0;
 }
 
 #in-temp-container{
     background-color: #926BE5;
-    grid-row-start: 3;
-    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
     height: 355px;
 }
 
@@ -61,23 +65,33 @@ html{
     grid-row-end: 1;
     height: 209px;
     padding: 0;
+    text-align: center;
 }
 
 
 
 #out-temp-container{
     background-color: #6033C1;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
     height: 240px;
 }
 
 #Prof-container{
     background-color: #1B0942;
-    grid-row-start: 6;
-    grid-row-end: 6;
+    grid-row-start: 7;
+    grid-row-end: 7;
     height: 375px;
+    display: flex;
+    justify-content: center;
+    place-items: center;
 }
+
+.profile-pic{
+   border: white solid 1px;
+   border-radius: 9px;
+}
+
 
 .apparaat {
     padding: 10px;
@@ -133,9 +147,10 @@ button{
 
 
 @media only screen and (min-width: 768px){
-   #main-container{ display: grid;
+   #main-container{ 
+       display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 0;
 }
 
@@ -145,6 +160,7 @@ button{
     grid-column-start: 1;
     grid-column-end: 3;
     height: 141px;
+    padding: 9px;
 }
 
 #stat-container{
@@ -153,6 +169,15 @@ button{
     grid-column-start: 1;
     grid-column-end: 1;
     height: 575px;
+}
+
+#stat-container-show{
+    background-color: #BBA4EB;
+    grid-row-start: 4;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
 }
 
 #in-temp-container{
@@ -174,9 +199,10 @@ button{
 #Prof-container{
     grid-row-start: 4;
     grid-row-end: 5;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 3;
 }
+
 
 }
 
@@ -213,12 +239,12 @@ button{
     }
 
     #out-temp-container{
-        grid-row-start: 7;
-        grid-row-end: 12;
-        grid-column-start: 5;
-        grid-column-end: 9;
-        height: 270px;
-        margin-top: 30px;
+        grid-row-start: 5;
+        grid-row-end: 11;
+        grid-column-start: 9;
+        grid-column-end: 14;
+        
+        
     }
 
     #DTL-container{
@@ -230,11 +256,21 @@ button{
     }
 
     #Prof-container{
-        grid-row-start: 5;
+        grid-row-start: 9;
         grid-row-end: 9;
         grid-column-start: 9;
         grid-column-end: 14;
-        height: 430px;
+        height: 170px;
+    }
+
+    #stat-container-show{
+        background-color: #BBA4EB;
+        grid-row-start: 8;
+        grid-row-end: 12;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        height: 235px;
+        
     }
 
 

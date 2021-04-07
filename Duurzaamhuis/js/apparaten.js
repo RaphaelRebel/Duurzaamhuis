@@ -114,7 +114,7 @@ const updateGegevens = (data) => {
     nummer.innerHTML = "€ " + jaarlijkseKosten + " per jaar";
   } else {
     let jaarlijksVerbruik = berekenJaarVerbruik( minutenPerDag, data.apparaat.vermogen);
-    nummer.innerHTML = jaarlijksVerbruik + " KwH";
+    nummer.innerHTML = jaarlijksVerbruik + " kW";
   }};
 
 const berekenJaarVerbruik = (minuten_per_dag, vermogen) => {
