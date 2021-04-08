@@ -21,8 +21,14 @@ html{
     /* grid-template-columns: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px;
     grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px ; */
     gap: 5px;
-    
     height: 0;
+}
+
+#grafiek {
+    background-color: #ffffff;
+    border: 2px dotted #333333;
+    width: 800px;
+    height: 600px;
 }
 
 
@@ -83,8 +89,8 @@ html{
     grid-row-end: 7;
     height: 375px;
     display: flex;
-    justify-content: center;
-    place-items: center;
+    justify-content: start;
+    
 }
 
 .profile-pic{
@@ -143,6 +149,10 @@ button{
 .lineThree{
     font-size: 32px;
     font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.prof-name{
+    padding: 18px;
 }
 
 
