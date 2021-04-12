@@ -1,8 +1,8 @@
 const startGrafiek = () => {
-    laadJSON("js/data.json");
+    laadJSON2("js/data.json");
 }
 
-const laadJSON = (url) => {
+const laadJSON2 = (url) => {
     // het XMLHttpRequest object maken
     const aanvraag = new XMLHttpRequest();
   
@@ -25,7 +25,7 @@ const laadJSON = (url) => {
 
 const maakGrafiek = (data) => {
     // Hier gaan we de chart maken
-    new Chartist.Line('#grafiek', data);
+    new Chartist.Bar('#grafiek', data);
 }
 
 // Wacht tot de pagina is geladen, dan pas de startGrafiek functie uitvoeren
