@@ -1,12 +1,19 @@
 <html>
+    <head>
+    <link rel="stylesheet" href="style/inlog.css">
+    <script src="js/canvas.js"></script>
+    </head>
     <body>
-        <form action = "inlog/logincheck.php" method="POST">
-            Gebruikersnaam<br>
+        <canvas id="c"></canvas>
+        <div id="container">
+        <form id="inlog" action = "inlog/logincheck.php" method="POST">
+           <p> Gebruikersnaam</p><br>
             <input type = "text" name = "user"><br>
-            Wachtwoord<br>
+           <p> Wachtwoord</p><br>
             <input type ="password" name = "pass"><br>
             <input type ="submit" value = "Inloggen!">
         </form>
         <p>Of meld je aan door <a href="inlog/signup.html">hier</a> te klikken!</p>
+    </div>
     </body>
 </html>

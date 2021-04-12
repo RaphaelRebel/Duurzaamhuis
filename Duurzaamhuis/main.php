@@ -21,7 +21,7 @@
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js" defer></script>
     </head>
         <body>
-
+      
         <a href="inlog/logout.php">Log uit</a>
 
             <h1 class="title">DASHBOARD</h1>
