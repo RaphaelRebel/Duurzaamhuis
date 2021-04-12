@@ -9,6 +9,27 @@ html{
     
 }
 
+#header{
+    background-color: #1B0942;
+    width: 100%;
+    height: 80px;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
+.temp{
+    font-size: .5rem;
+    font-family: Dosis;
+    fill: #fff;
+}
+
+.eenheid{
+    font-size: .3rem;
+}
+
 .title{
     display: flex;
     justify-content: center;
@@ -286,15 +307,6 @@ button{
         height: 235px;
         
     }
-    #header{
-        background-color: #1B0942;
-        width: 100%;
-        height: 80px;
-    }
-    
-    #header a {
-        color: white;
-        text-decoration: none;
-    }
+
 
 }

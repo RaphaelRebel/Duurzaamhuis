@@ -16,6 +16,7 @@
         <script src="js/tijd.js" defer></script>
         <script src="js/grafiek.js" defer></script>
         <script src="js/weather-out.js" defer></script>
+        <script src="js/tempratuur.js" defer></script>
         <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js" defer></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js" defer></script>
@@ -36,7 +37,18 @@
                 </div>
         </div>
             
-            <div id="in-temp-container">Inside temperature</div>
+            <div id="in-temp-container">
+                <svg width="300px" height="300px" viewBox="0 0 42 42">
+                <circle cx="20" cy="20" r=" 15.91549430918954" fill="transparent" stroke="rgba(200, 200, 200, 0.5)" stroke-width="4"></circle>
+                <circle cx="20" cy="20" r=" 15.91549430918954" fill="transparent" stroke="#38D430" stroke-width="4" stroke-dasharray="15 85" stroke-dashoffset="75" id="cirkelBoog"></circle>
+                <g class="temp">
+                <text id="temperatuur" x="30%" y="51%"></text>
+                <text id="eenheid" x="52%" y="50%">&deg;C</text>
+                </g>
+                </svg>
+                <input type="range" min="1" max="30" value="18" id="thermostaat">
+            </div>
+
             <div id="DTL-container"><p>
                 
                 <span id="daytime" class="lineOne">...</span>
