@@ -1,41 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Duurzaamhuis</title>
-        <script src="js/apparaten.js" defer></script>
-        <script src="js/tijd.js" defer></script>
-    </head>
-        <body>
-
-            <h1 class="title">DASHBOARD</h1>
-
-        <div id="main-container">
-            
-            <div id="stat-container">Hourly/Dayly/Weekly stats on energy</div>
-            
-            <div id="in-temp-container">Inside temperature</div>
-            <div id="DTL-container"><p><span id="datetime">...</span></p>
-                
-                    </div>
-            <div id="out-temp-container">Outside temperture</div>
-            <div id="Prof-container">Profile</div>
-            <div id="stat-container-show">
-                <div class="apparaat" data-id="VER">
-                    <h1>Titel apparaat</h1>
-                    <div>
-                        <p>minuten per dag: <span>0</span></p>
-                        <input class="slider" type="range" min="0" max="240" step="10" value="15" />
-                    </div>
-                    <h2>Verbruik of kosten</h2>
-                    <button>Toon verbruik</button>
-                </div>
-            </div>
-        </div>
-        
-        
-    
+<html>
+    <body>
+        <form action = "inlog/logincheck.php" method="POST">
+            Gebruikersnaam<br>
+            <input type = "text" name = "user"><br>
+            Wachtwoord<br>
+            <input type ="password" name = "pass"><br>
+            <input type ="submit" value = "Inloggen!">
+        </form>
+        <p>Of meld je aan door <a href="inlog/signup.html">hier</a> te klikken!</p>
     </body>
 </html>
