@@ -22,7 +22,9 @@
     </head>
         <body>
 
-        <a href="inlog/logout.php">Log uit</a>
+        <div id="header">
+            <a href="inlog/logout.php">Log uit</a>
+        </div>
 
             <h1 class="title">DASHBOARD</h1>
 
@@ -73,7 +75,9 @@
                 </div>
             </div>
         </div>
-        
+        <div>
+            
+        </div>
         
     
     </body>
