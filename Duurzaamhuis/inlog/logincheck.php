@@ -8,10 +8,10 @@ session_start();
     $gebruikersnaam = $_POST['user'];
     $wachtwoord = $_POST['pass'];
 
-    $host = "127.0.0.1";
-    $user = "c2779amber";
-    $pass = "phuxprPtXBFVJ9@";
-    $db = "c2779ecologic";
+    $host = "localhost";
+    $user = "root";
+    $pass = "root";
+    $db = "flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
     if ($mysqli -> connect_errno)
