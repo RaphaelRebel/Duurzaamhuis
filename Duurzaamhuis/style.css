@@ -9,6 +9,27 @@ html{
     
 }
 
+#header{
+    background-color: #1B0942;
+    width: 100%;
+    height: 80px;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
+.temp{
+    font-size: .5rem;
+    font-family: Dosis;
+    fill: #fff;
+}
+
+.eenheid{
+    font-size: .3rem;
+}
+
 .title{
     display: flex;
     justify-content: center;
@@ -227,7 +248,7 @@ button{
     #main-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px ;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
         gap: 5px;
         margin: 0 1fr 0 1fr;
         height: 0;
