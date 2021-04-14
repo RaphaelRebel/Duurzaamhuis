@@ -24,7 +24,8 @@
         <body>
 
         <div id="header">
-            <a href="inlog/logout.php">Log uit</a>
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <a href="inlog/logout.php">UITLOGGEN</a>
         </div>
 
             <h1 class="title">DASHBOARD</h1>
@@ -32,8 +33,9 @@
         <div id="main-container">
             
             <div id="stat-container">
+               
                 <div id="grafiek">
-                    
+                
                 </div>
         </div>
             
@@ -90,7 +92,7 @@
         <div>
             
         </div>
-        
+        <footer>© COPYRIGHT 2021 ECOLOGIC</footer>
     
     </body>
 </html>

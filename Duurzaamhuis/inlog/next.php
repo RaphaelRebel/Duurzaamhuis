@@ -3,12 +3,14 @@
 <?php 
 session_start();
 ?>
+<link rel="stylesheet" href="../style/next.css">
 </HEAD>
 <BODY>
+    <div id="container">
     <?php
     if(isset($_SESSION['username']))
     {
-        echo "Hier komt de content voor de ingelogde user<br> ";
+        
         $username = $_SESSION['username'];
         // echo $_SESSION['username'];
         echo "Welkom " . $username . "</br>";
@@ -19,5 +21,6 @@ session_start();
         echo "Je bent uitgelogd";
     }
  ?>
+ </div>
  </BODY>
 </HTML>

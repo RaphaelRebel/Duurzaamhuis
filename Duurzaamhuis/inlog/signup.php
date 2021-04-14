@@ -1,3 +1,9 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../style/signup.css">
+</head>
+  <body>
+    <div id="container">
 <?php
 
 
@@ -25,4 +31,8 @@
     echo"U kunt <a href='../index.html'>hier</a> inloggen op de website";
   
     ?>
+    </div>
+
+  </body>
+  </html>
     
