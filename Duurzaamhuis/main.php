@@ -15,7 +15,7 @@
         <script src="js/apparaten.js" defer></script>
         <script src="js/tijd.js" defer></script>
         <script src="js/grafiek.js" defer></script>
-        <script src="js/weather-out.js" defer></script>
+        <script src="js/weerlive.js" defer></script>
         <script src="js/tempratuur.js" defer></script>
         <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js" defer></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
@@ -24,7 +24,8 @@
         <body>
 
         <div id="header">
-            <a href="inlog/logout.php">Log uit</a>
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <a href="inlog/logout.php">UITLOGGEN</a>
         </div>
 
             <h1 class="title">DASHBOARD</h1>
@@ -32,8 +33,9 @@
         <div id="main-container">
             
             <div id="stat-container">
+               
                 <div id="grafiek">
-                    
+                
                 </div>
         </div>
             
@@ -64,8 +66,25 @@
                 
                     </div>
             <div id="out-temp-container">
-              <div id="tempC">Loading...</div>
+                <div id="dashboard">
+            <div id="weather" class="item">
+                <div id="live">
+                    <select id="city">
+                        <option value="Amsterdam">Amsterdam</option>
+                        <option value="Leiden">Leiden</option>
+                        <option value="Rotterdam">Rotterdam</option>
+                        <option value="Utrecht">Utrecht</option>
+                        <option value="Friesland">Friesland</option>
+                        <option value="Den-haag">Den-haag</option>
+                    </select>
+        <img src="images/loading.gif" alt="loading">
+        <p> Momenteel is het:  </p>
+        <h2></h2>
+            <h1></h1>
+        </div>
+    </div>
             </div>
+    </div>
             <div id="Prof-container">
                 <svg class="profile-pic" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 172.487 172.487">
                     <path id="ic_perm_identity_24px" d="M86.744,23.652a21.72,21.72,0,1,1-21.72,21.72,21.718,21.718,0,0,1,21.72-21.72m0,93.087c30.719,0,63.092,15.1,63.092,21.72v11.377H23.652V138.458c0-6.619,32.373-21.72,63.092-21.72M86.744,4a41.372,41.372,0,1,0,41.372,41.372A41.36,41.36,0,0,0,86.744,4Zm0,93.087C59.128,97.087,4,110.946,4,138.458v31.029H169.487V138.458C169.487,110.946,114.359,97.087,86.744,97.087Z" transform="translate(-0.5 -0.5)" fill="#fff" stroke="#1b0942" stroke-width="7"/>
@@ -90,7 +109,7 @@
         <div>
             
         </div>
-        
+        <footer>© COPYRIGHT 2021 ECOLOGIC</footer>
     
     </body>
 </html>

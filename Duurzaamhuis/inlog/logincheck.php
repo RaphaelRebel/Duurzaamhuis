@@ -2,8 +2,11 @@
 <?php 
 session_start();
 ?>
+<link rel="stylesheet" href="../style/logincheck.css"></link>
 </HEAD>
 <BODY>   
+    <div id="container" >
+        
 <?php
     $gebruikersnaam = $_POST['user'];
     $wachtwoord = $_POST['pass'];
@@ -39,14 +42,15 @@ session_start();
     {
        echo "Je bent ingelogd<hr>";
        $_SESSION['username'] = $gebruikersnaam;
-       echo "Klik <a href ='next.php'>hier</a> om naar de volgende beveiligde site te gaan";       
+       echo "Klik <a href ='../main.php'>hier</a> om naar de volgende beveiligde site te gaan";       
     }
     else
     {
-        echo "Inloggen is mislukt. <br><a href ='login.html'>Klik hier</a> om terug te gaan.";
+        echo "Inloggen is mislukt. <br><a id='button' href ='../index.html'>Klik hier</a> om terug te gaan.";
         
     }
 ?>
+</div>
 
 
 </BODY>
