@@ -86,7 +86,7 @@ const toonWeerbericht = (weerbericht) => {
   console.log(weerIcon);
 
   // Gebruik de image code uit de JSON om de afbeelding src te maken
-  weerIcon.src = `../images/icons/${weer.image}.png`;
+  weerIcon.src = `./images/icons/${weer.image}.png`;
 
   //Kies zelf welke gegevens je wilt tonen
   info1.innerHTML = weer.verw;

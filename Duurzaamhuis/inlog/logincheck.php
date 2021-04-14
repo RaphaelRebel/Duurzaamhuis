@@ -11,10 +11,10 @@ session_start();
     $gebruikersnaam = $_POST['user'];
     $wachtwoord = $_POST['pass'];
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "root";
-    $db = "flex";
+    $host = "127.0.0.1";
+    $user = "c2779amber";
+    $pass = "phuxprPtXBFVJ9@";
+    $db = "c2779flex";
 
     $mysqli = new mysqli($host,$user,$pass,$db);
     if ($mysqli -> connect_errno)
@@ -42,7 +42,7 @@ session_start();
     {
        echo "Je bent ingelogd<hr>";
        $_SESSION['username'] = $gebruikersnaam;
-       echo "Klik <a href ='../main.php'>hier</a> om naar de volgende beveiligde site te gaan";       
+       echo "<a href ='../main.php'>Klik hier</a> om naar de volgende beveiligde site te gaan";       
     }
     else
     {

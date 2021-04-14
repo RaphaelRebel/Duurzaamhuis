@@ -1,4 +1,4 @@
 # duurzaamhuis
 
 # Link naar duurzaamhuis website:
-## http://22503.hosts1.ma-cloud.nl/Duurzaamhuis/index.html
+## http://25046.hosts1.ma-cloud.nl/duurzaamhuis/duurzaamhuis/index.html
